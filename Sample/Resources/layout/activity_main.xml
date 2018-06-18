@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:keepScreenOn="true"
+    android:background="#FF000000">
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent">
+
+    <android.support.v7.widget.Toolbar
+      android:id="@+id/main_toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:minHeight="?android:attr/actionBarSize"
+      android:background="@color/toolbarPrimary"
+      android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar" />
+
+    <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent">
+
+      <RelativeLayout
+          android:layout_width="fill_parent"
+          android:layout_height="0dip"
+          android:layout_weight="0.1" />
+
+      <RelativeLayout
+          android:layout_width="fill_parent"
+          android:layout_height="0dip"
+          android:layout_weight="0.9">
+
+        <LinearLayout
+          android:id="@+id/button_list"
+          android:orientation="vertical"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:divider="@drawable/horizontal_divider"
+          android:showDividers="beginning|middle|end"
+          android:paddingLeft="35dp"
+          android:paddingRight="40dp">
+
+          <RelativeLayout
+            android:id="@+id/example_one"
+            android:background="@drawable/button_selector"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+              android:id="@+id/example_text"
+              android:text="EXAMPLE VALUE: "
+              android:textSize="28dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:paddingLeft="16dp"
+              android:textColor="@color/white" />
+
+          </RelativeLayout>
+
+        </LinearLayout>
+
+      </RelativeLayout>
+
+    </LinearLayout>
+    
+  </LinearLayout>
+  
+</RelativeLayout>

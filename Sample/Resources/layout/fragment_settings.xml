@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <com.messert.preferences.droid.EditNumberPreference
+                  android:key="example_value"
+                  android:title="Example value"
+                  android:dialogTitle="Set the example value"
+                  android:summary="Change the example value, and confirm the update in the Main Activity"
+                  app:minValue="1"
+                  app:maxValue="100"
+                  android:defaultValue="10" />
+
+  <Preference
+          android:key="reset_defaults"
+          android:title="Reset to Default Values" />
+
+  <PreferenceScreen
+      android:key="about_settings"
+      android:title="About EditNumberPreference">
+
+    <PreferenceCategory
+        android:title="About EditNumberPreference">
+
+      <Preference
+            android:key="version"
+            android:title="App version"/>
+
+    </PreferenceCategory>
+
+  </PreferenceScreen>
+
+  <!--<PreferenceScreen
+              android:title="title_intent_preference"
+              android:summary="summary_intent_preference">
+
+          <intent android:action="android.intent.action.VIEW"
+                  android:data="http://www.android.com" />-->
+
+</PreferenceScreen>
